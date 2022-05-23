@@ -1,7 +1,6 @@
 
 a
     text-decoration: none
-    color: white
     
 body
     margin: 0
@@ -10,7 +9,7 @@ body
 
 header
     background-image: url('../images/banner1.jpg')
-    background-size: cover
+    background-size: cover,contain
     background-repeat: no-repeat
     height: 100vh
     -webkit-box-shadow: inset 2px 14px 2000px 50px rgba(0,0,0,0.22)
@@ -70,3 +69,20 @@ header
     a
         border: 1px solid
         border-radius: 50px
+
+
+
+.menu_page_section, .book_page_section
+    background-image: url('../images/main_bg.jpg')
+
+    .page_box
+        border: 1px solid gray
+    
+.decoration
+    background-image: url('../images/bottom_decoration_img.png')
+    height: 10px
+    z-index:3
+
+.menu_contents
+    display: grid
+    grid-template-columns: 1fr 3frgr
