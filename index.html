@@ -34,15 +34,15 @@
         -->
         <div class="burger">
             <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4 text-white d-flex flex-column">
-                    <nav class="d-flex flex-column align-items-center w-100 justify-content-evenly gap-3">
+                <div class="bg-dark p-4 text-white d-flex flex-column flex-md-row">
+                    <nav class="d-flex flex-column flex-md-row align-items-center w-100 justify-content-evenly gap-lg-3">
                         <a class="text-white" href="">home</a>
                         <a class="text-white" href="">about us</a>
                         <a  class="text-white"href="">menu list</a>
                         <a  class="text-white"href="">team</a>
                     </nav>
                     <img class="logo m-auto text-center p-4" src="public/images/logo.png"  alt="">
-                    <nav class="d-flex flex-column align-items-center w-100 justify-content-evenly gap-3">
+                    <nav class="d-flex  flex-column flex-md-row align-items-center w-100 justify-content-evenly gap-lg-3">
                         <a class="text-white" href="">reservation</a>
                         <a  class="text-white"href="">blog</a>
                         <a class="text-white" href="">testimonials</a>
@@ -67,7 +67,7 @@
             </div>
             <div class="carousel-txt position-absolute">
               <div class="carousel-item active">
-                <div class="d-none d-md-flex main_title flex-column align-items-center">
+                <div class=" main_title flex-column align-items-center">
                   <p class="accroche col-lg-10">Whatever your <span class="text-white text-uppercase">occasion</span>, <span class="text-danger text-uppercase">taste</span>  <span>makes</span>  it one to <span>remember</span> !</p>
                   <div class="main_buttons d-flex gap-2 justify-content-center">
                     <a class="p-2 bg-white border-0 text-dark" href="">purchase theme</a>
@@ -78,13 +78,12 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class=" d-none d-md-block">
+                <div class="">
                     <p>Whatever your ccasion taste makes it one to remeber !</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <div class=" d-none d-md-block">
-  
+                <div class="">
                     <p>Whatever your occasion taste makes it one to remember !</p>
                 </div>
               </div>
@@ -108,43 +107,43 @@
         <section class="menu_page_section p-4">
            
             <div class="page_box bg-white container position-relative p-3">
-                <img src="public/images/box-bottom-left.png" class="position-absolute bottom-0 start-0" alt="">
-                <img src="public/images/box-bottom_right.png" class="position-absolute bottom-0 end-0" alt="">
-                <img src="public/images/box-left-top.png" class="position-absolute top-0 start-0" alt="">
-                <img src="public/images/box-right-top.png" class="position-absolute top-0 end-0" alt="">
+                <img src="public/images/box-bottom-left.png" class="position-absolute bottom-0 start-0  d-none d-md-block" alt="">
+                <img src="public/images/box-bottom_right.png" class="position-absolute bottom-0 end-0  d-none d-md-block" alt="">
+                <img src="public/images/box-left-top.png" class="position-absolute top-0 start-0  d-none d-md-block" alt="">
+                <img src="public/images/box-right-top.png" class="position-absolute top-0 end-0  d-none d-md-block" alt="">
 
                 <div class="story_box">
                     <div class="chefs_title d-flex flex-column align-items-center m-4 ">
                         <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">our</span> story</h2>
-                        <img class="m-auto" src="public/images/decoration_line.png" alt="">
+                        <img class="m-md-auto" src="public/images/decoration_line.png" alt="">
                     </div>
-                    <p class="text-secondary col-12 col-md-10 text-center m-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur fugiat modi eius repellendus voluptatibus reprehenderit dicta quis? Reiciendis amet repellat, consequatur exercitationem minima laborum delectus, natus ipsa iste nostrum ducimus voluptate laudantium aut eos et beatae impedit nobis vel dicta accusantium est in. Enim officia odio fuga natus blanditiis possimus rem modi ab quidem nulla provident veritatis sunt, exercitationem ipsa officiis dolor suscipit quae nisi sapiente voluptates odit non aut. Quasi doloribus enim pariatur minima, quia nostrum sint hic harum iusto sunt dolore tempore soluta impedit </p>
+                    <p class="text-secondary col-12 col-lg-6 text-center m-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur fugiat modi eius repellendus voluptatibus reprehenderit dicta quis? Reiciendis amet repellat, consequatur exercitationem minima laborum delectus, natus ipsa iste nostrum ducimus voluptate laudantium aut eos et beatae impedit nobis vel dicta accusantium est in. Enim officia odio fuga natus blanditiis possimus rem modi ab quidem nulla provident veritatis sunt, exercitationem ipsa officiis dolor suscipit quae nisi sapiente voluptates odit non aut. Quasi doloribus enim pariatur minima, quia nostrum sint hic harum iusto sunt dolore tempore soluta impedit </p>
                 </div>
                 <div class="menu_box p-4">
                     <div class="menu_title d-flex flex-column align-items-center m-4">
                         <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">our</span> menu list</h2>
-                        <img class="m-auto" src="public/images/decoration_line.png" alt="">
+                        <img class="m-md-auto" src="public/images/decoration_line.png" alt="">
                     </div>
 
                     <div class="menu_content d-flex  m-auto border-0">
                 
                         <div class="col-2">
-                        <div class=" menu_icons d-flex flex-column " id="list-tab" role="tablist">
-                            <a class="active menu_link list-group-item list-group-item-action  text-center text-capitalize fs-5 d-flex flex-column  p-2" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
-                                <i class="menu_icon fa-solid fa-mug-saucer text-secondary"></i>
+                        <div class=" menu_icons d-flex flex-column m-md-auto" id="list-tab" role="tablist">
+                            <a class="active menu_link list-group-item list-group-item-action  text-center text-capitalize fs-5 d-flex flex-column " id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+                                 <h2><i class="menu_icon fa-solid fa-mug-saucer text-secondary"></i></h2> 
                                 <p>breakfast</p>
                             </a>
-                            <a class="menu_link list-group-item list-group-item-action  text-center text-capitalize fs-5 d-flex flex-column p-2" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+                            <a class="menu_link list-group-item list-group-item-action  text-center text-capitalize fs-5 d-flex flex-column " id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
 
-                                <i class="menu_icon  fa-solid fa-utensils text-secondary"></i>
+                                <h2><i class="menu_icon  fa-solid fa-utensils text-secondary"></i></h2> 
                                 <p>lunch</p>
                             </a>
-                            <a class="menu_link list-group-item list-group-item-action text-center text-capitalize fs-5 d-flex flex-column p-2" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">
-                                <i class="menu_icon  fa-solid fa-cookie-bite text-secondary"></i>
+                            <a class="menu_link list-group-item list-group-item-action text-center text-capitalize fs-5 d-flex flex-column" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">
+                                <h2><i class="menu_icon  fa-solid fa-cookie-bite text-secondary"></i></h2> 
                                 <p>snacks</p>
                             </a>
-                            <a class="menu_link list-group-item list-group-item-action text-center text-capitalize fs-5 d-flex flex-column p-2" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
-                                <i class="menu_icon  fa-solid fa-utensils text-secondary"></i>
+                            <a class="menu_link list-group-item list-group-item-action text-center text-capitalize fs-5 d-flex flex-column" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
+                                <h2><i class="menu_icon  fa-solid fa-utensils text-secondary"></i></h2>
                                 <p>dinenr</p>
                             </a>
                         </div>
@@ -152,9 +151,9 @@
                         <div class="col-10">
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                                <div class="menu d-flex gap-2 ">
+                                <div class="menu d-flex gap-2 flex-column flex-md-row">
                                     <div class="menu_list">
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
                                             <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
@@ -162,7 +161,7 @@
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
                                             <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
@@ -170,7 +169,7 @@
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
                                             <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
@@ -178,7 +177,7 @@
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
                                             <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
@@ -186,7 +185,7 @@
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
+                                             <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
                                             <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
@@ -196,8 +195,8 @@
                                         </div>
                         
                                     </div>
-                                    <div class="menu_list ">
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
+                                    <div class="menu_list">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
                                             <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
@@ -205,7 +204,7 @@
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
                                             <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
@@ -213,7 +212,7 @@
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
                                             <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
@@ -221,7 +220,7 @@
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
                                             <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
@@ -229,7 +228,7 @@
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
+                                             <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
                                             <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
@@ -237,13 +236,14 @@
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
+                        
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                                <div class="menu d-flex gap-2 ">
+                                <div class="menu d-flex gap-2 flex-column flex-md-row">
                                     <div class="menu_list">
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
                                             <img class="menu_img_item rounded-circle " src="public/images/menu_image_2.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
@@ -251,32 +251,32 @@
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_2.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_2.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_2.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_2.jpg" alt="">
+                                             <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
@@ -285,54 +285,55 @@
                                         </div>
                         
                                     </div>
-                                    <div class="menu_list ">
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_2.jpg" alt="">
+                                    <div class="menu_list">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_2.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_2.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_2.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_2.jpg" alt="">
+                                             <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
+                        
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                                <div class="menu d-flex gap-2 ">
+                                <div class="menu d-flex gap-2 flex-column flex-md-row">
                                     <div class="menu_list">
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
                                             <img class="menu_img_item rounded-circle " src="public/images/menu_image_3.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
@@ -340,32 +341,32 @@
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_3.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_3.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_3.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_3.jpg" alt="">
+                                             <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
@@ -374,54 +375,55 @@
                                         </div>
                         
                                     </div>
-                                    <div class="menu_list ">
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_3.jpg" alt="">
+                                    <div class="menu_list">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_3.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_3.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_3.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_3.jpg" alt="">
+                                             <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
+                        
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                                <div class="menu d-flex gap-2 ">
+                                <div class="menu d-flex gap-2 flex-column flex-md-row">
                                     <div class="menu_list">
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
                                             <img class="menu_img_item rounded-circle " src="public/images/menu_image_4.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
@@ -429,32 +431,32 @@
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_4.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_4.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_4.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_4.jpg" alt="">
+                                             <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
@@ -463,47 +465,48 @@
                                         </div>
                         
                                     </div>
-                                    <div class="menu_list ">
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_4.jpg" alt="">
+                                    <div class="menu_list">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_4.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_4.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_4.jpg" alt="">
+                                        <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
-                                        <div class="menu_item d-flex justify-content-center align-items-center">
-                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_4.jpg" alt="">
+                                             <div class="menu_item d-flex flex-column flex-lg-row text-center justify-content-center align-items-center">
+                                            <img class="menu_img_item rounded-circle " src="public/images/menu_image_1.jpg" alt="">
                                             <div class="menu_desc_item">
                                                 <p class="fw-bold">Lorem ipsum dolor sit.</p>
                                                 <p>Lorem ipsum dolor sit amet consectetur</p>
                                             </div>
                                             <p class="text-danger bg-light m-0 p-1">25$</p>
                                         </div>
+                        
                                     </div>
                                 </div>
                             </div>
@@ -517,7 +520,7 @@
         <section class="meet_chefs bg-black d-flex flex-column gap-5">
             <div class="chefs_title d-flex flex-column align-items-center">
                 <h2 class="text-white text-center text-capitalize"><span class="text-danger text-uppercase">meet</span> our chefs</h2>
-                <img class="m-auto" src="public/images/decoration_line.png" alt="">
+                <img class="m-md-auto" src="public/images/decoration_line.png" alt="">
             </div>
            
             <div class="chefs d-flex flex-column flex-md-row justify-content-evenly text-white text-center flex-wrap">
@@ -545,20 +548,20 @@
         <section class="book_page_section p-4">
            
             <div class="page_box bg-white container position-relative p-3">
-                <img src="public/images/box-bottom-left-grey.png" class="position-absolute bottom-0 start-0" alt="">
-                <img src="public/images/box-bottom_right-grey.png" class="position-absolute bottom-0 end-0" alt="">
-                <img src="public/images/box-left-top-grey.png" class="position-absolute top-0 start-0" alt="">
-                <img src="public/images/box-right-top-grey.png" class="position-absolute top-0 end-0" alt="">
+                <img src="public/images/box-bottom-left-grey.png" class="position-absolute bottom-0 start-0 d-none d-md-block" alt="">
+                <img src="public/images/box-bottom_right-grey.png" class="position-absolute bottom-0 end-0  d-none d-md-block" alt="">
+                <img src="public/images/box-left-top-grey.png" class="position-absolute top-0 start-0  d-none d-md-block" alt="">
+                <img src="public/images/box-right-top-grey.png" class="position-absolute top-0 end-0  d-none d-md-block" alt="">
 
                 <div class="book_table m-2">
                     <div class="book_title d-flex flex-column align-items-center m-4">
                         <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">book</span> your table</h2>
-                        <img class="m-auto" src="public/images/decoration_line.png" alt="">
+                        <img class="m-md-auto col-md-12" src="public/images/decoration_line.png" alt="">
                     </div>
                     <div class="book_box text-white rounded-2 m-auto d-flex flex-column gap-3">
                         <p class="text-center opacity-50">for any question call us at: <span class="fs-5"> +03-77298772</span></p>
-                        <form class="book_form"action="">
-                            <div class="form1 d-flex flex-column col-md-10 m-auto gap-1">
+                        <form class="book_form d-flex flex-column flex-lg-row"action="">
+                            <div class="form1 d-flex flex-column m-auto gap-1">
                                 <input type="text" placeholder="Full name">
                                 <input type="text" placeholder="Phone number">
                                 <input type="text" placeholder="Date">
@@ -572,7 +575,7 @@
                                     <option value="goldfish">Goldfish</option>
                                 </select>
                             </div>
-                            <div class="form2 d-flex flex-column col-md-10 m-auto gap-1">
+                            <div class="form2 d-flex flex-column  m-auto gap-1">
                                 <input type="text" placeholder="Enter id">
                                 <select name="pets" id="pet-select">
                                     <option value="">No of personne</option>
@@ -604,17 +607,17 @@
                 <div class="book_blog">
                     <div class="chefs_title d-flex flex-column align-items-center m-4">
                         <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">our</span> blog</h2>
-                        <img class="m-auto" src="public/images/decoration_line.png" alt="">
+                        <img class="m-md-auto" src="public/images/decoration_line.png" alt="">
                     </div>
-                    <div class="blog_images d-flex justify-content-evenly m-auto ">
+                    <div class="blog_images d-flex justify-content-evenly m-auto flex-column flex-md-row">
                         <div class="card border-0 col-md-5 position-relative">
                             <img src="public/images/blog_img1.jpg" class="card-img-top" alt="...">
                             <div class="col-10 m-auto">
                                 <div class="img_ext bg-danger text-white p-2 rounded-3  position-absolute">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                                    12 april / 20 Comments / 35 likes
                                 </div>
                                 <div class="card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <p class="card-text">Some quick example text to build on the card </p>
                                 </div>
                             </div>
 
@@ -623,10 +626,10 @@
                             <img src="public/images/blog_img2.jpg" class="card-img-top" alt="...">
                             <div class="col-10 m-auto">
                                 <div class="img_ext bg-danger text-white p-2 rounded-3  position-absolute">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                                    12 april / 20 Comments / 35 likes
                                 </div>
                                 <div class="card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <p class="card-text">Some quick example text to build on the card </p>
                                 </div>
                             </div>
 
@@ -637,10 +640,10 @@
                 </div>
             </div>
         </section>
-        <section class="testi_section p-4 d-flex align-items-center flex-column">
+        <section class="testi_section p-md-4 d-flex align-items-center flex-column">
             <div class="chefs_title d-flex flex-column align-items-center mb-4">
                 <h2 class="text-white text-center text-capitalize"><span class="text-danger text-uppercase">client</span> testimonials</h2>
-                <img class="m-auto" src="public/images/decoration_line.png" alt="">
+                <img class="m-md-auto" src="public/images/decoration_line.png" alt="">
             </div>
             <div class="testi_box d-flex flex-column flex-lg-row gap-3 col-10 justify-content-center">
                 <div class="testi  d-flex flex-column flex-md-row col-12 col-lg-6 gap-3">
@@ -666,19 +669,19 @@
         <section class="contact_page_section p-4">
             <div class="contact_title d-flex flex-column align-items-center">
                 <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">our</span> contact</h2>
-                <img class="m-auto" src="public/images/decoration_line.png" alt="">
+                <img class="m-md-auto" src="public/images/decoration_line.png" alt="">
             </div>
             <div class=" contact_box bg-danger text-white p-3  rounded-1 m-auto">
                 <div class="locali text-center p-2">
-                    <i class="fa-solid fa-location-dot"></i>
+                    <h2> <i class="fa-solid fa-location-dot"></i></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, id?</p>
                 </div>
                 <div class="phone text-center p-2 d-flex flex-column gap-3 p-3">
-                    <i class="fa-solid fa-phone"></i>
+                    <h2><i class="fa-solid fa-phone"></i></h2> 
                     +324 86 76 75 34
                 </div>
                 <div class="mail text-center p-3">
-                    <i class="fa-solid fa-envelope"></i>
+                    <h2><i class="fa-solid fa-envelope"></i></h2> 
                     <p>abs@abc.com</p>
                 </div>
             </div>
@@ -698,7 +701,7 @@
         </div>
         <div class="insta col-md-4">
             <h4>instagram</h4>
-            <div class="insta_img col-7 d-flex flex-wrap gap-1">
+            <div class="insta_img col-lg-7 d-flex flex-wrap gap-1">
                 <img src="public/images/menu_image_2.jpg" alt="">
                 <img src="public/images/menu_image_2.jpg" alt="">
                 <img src="public/images/menu_image_3.jpg" alt="">

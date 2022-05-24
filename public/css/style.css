@@ -143,10 +143,6 @@ header .navigation .logo {
 .locali, .phone, .mail {
   border-bottom: 1px solid #a9aba8;
 }
-.locali i, .phone i, .mail i {
-  transform: scale(2);
-}
-
 .insta_img img {
   width: 50px;
 }
@@ -163,11 +159,6 @@ header .navigation .logo {
   padding: 4rem;
 }
 
-.book_form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .blog_img img {
   height: 250px;
   border: 4px solid lightgray;
@@ -182,7 +173,7 @@ header .navigation .logo {
   bottom: 20%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   header .burger {
     display: block;
   }
@@ -193,6 +184,27 @@ header .navigation .logo {
 
   .carousel-txt {
     position: relative;
+  }
+
+  .img_ext {
+    bottom: 32%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  header .burger {
+    display: block;
+  }
+
+  .carousel-txt p {
+    font-size: 25px;
+  }
+
+  .book_box {
+    padding: 0;
+  }
+
+  .img_ext {
+    bottom: 43%;
   }
 }
 
