@@ -18,7 +18,7 @@ body {
 
 header {
   background-image: url("../images/banner1.jpg");
-  background-size: cover, contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   -webkit-box-shadow: inset 2px 14px 2000px 50px rgba(0, 0, 0, 0.22);
@@ -94,8 +94,14 @@ header .navigation .logo {
   color: black;
 }
 
-.decoration {
+.decoration-bottom {
   background-image: url("../images/bottom_decoration_img.png");
+  height: 10px;
+  z-index: 3;
+}
+
+.decoration-top {
+  background-image: url("../images/footer_bottom_decoration_img.png");
   height: 10px;
   z-index: 3;
 }
@@ -128,7 +134,9 @@ header .navigation .logo {
 
 .menu_link {
   border-bottom: 1px solid lightgray;
+  border-right: 4px solid white;
   border-right: 1px solid lightgray;
+  border-right-border-bottom: 4px solid white;
 }
 
 .menu_link:hover i {
@@ -136,7 +144,9 @@ header .navigation .logo {
 }
 
 .menu_link:focus {
-  border-right: 2px solid;
+  border-right: 4px solid red;
+}
+.menu_link:focus i {
   color: red;
 }
 
@@ -176,6 +186,10 @@ header .navigation .logo {
 
 .img_ext {
   bottom: 20%;
+}
+
+footer {
+  z-index: -1;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -218,6 +232,14 @@ header .navigation .logo {
 
   .under_title_img {
     width: 200px;
+  }
+
+  .menu_link:focus {
+    border-bottom: 4px solid red;
+    border-right: 4px solid white;
+  }
+  .menu_link:focus i {
+    color: red;
   }
 }
 
