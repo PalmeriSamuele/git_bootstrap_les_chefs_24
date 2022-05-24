@@ -12,6 +12,10 @@ body {
   box-sizing: border-box;
 }
 
+.burger {
+  display: none;
+}
+
 header {
   background-image: url("../images/banner1.jpg");
   background-size: cover, contain;
@@ -179,9 +183,8 @@ header .navigation .logo {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  header .navigation {
-    left: 45%;
-    gap: 0;
+  header .burger {
+    display: block;
   }
 
   .carousel-txt p {

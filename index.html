@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="position-relative text-white w-100 ">
-        <div class="navigation d-flex position-absolute col-9 position-fixed">
+        <div class="navigation d-none d-lg-flex position-absolute col-9 position-fixed">
             <nav class="d-flex align-items-center w-100 justify-content-evenly ">
                 <a href="">home</a>
                 <a href="">about us</a>
@@ -29,6 +29,36 @@
                 <a href="">contact us</a>
             </nav>
         </div>
+        <!--
+            burger responsive
+        -->
+        <div class="burger">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4 text-white d-flex flex-column">
+                    <nav class="d-flex flex-column align-items-center w-100 justify-content-evenly gap-3">
+                        <a class="text-white" href="">home</a>
+                        <a class="text-white" href="">about us</a>
+                        <a  class="text-white"href="">menu list</a>
+                        <a  class="text-white"href="">team</a>
+                    </nav>
+                    <img class="logo m-auto text-center p-4" src="public/images/logo.png"  alt="">
+                    <nav class="d-flex flex-column align-items-center w-100 justify-content-evenly gap-3">
+                        <a class="text-white" href="">reservation</a>
+                        <a  class="text-white"href="">blog</a>
+                        <a class="text-white" href="">testimonials</a>
+                        <a class="text-white" href="">contact us</a>
+                    </nav>
+                </div>
+              </div>
+              <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </nav>
+        </div>
+        
         <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="false">
             <div class="carousel-indicators ">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
