@@ -1,4 +1,4 @@
-h2, .accroche
+h2, .accroche, .menu_link
     font-family: 'Courgette', cursive
 a
     text-decoration: none
@@ -45,8 +45,8 @@ header
     z-index: 3
 
 .carousel-txt
-     bottom: 7%
-     left: 50%
+     bottom: 0%
+     left: 48.5%
      transform: translate(-50%,-50%)
 
 .main_title
@@ -79,6 +79,10 @@ header
     .page_box
         border: 1px solid gray
     
+.menu_page_section
+    &:hover
+        .navigation
+            color: black
 .decoration
     background-image: url('../images/bottom_decoration_img.png')
     height: 10px
@@ -155,3 +159,15 @@ header
 
 .img_ext
     bottom: 20%
+
+@media only screen and (min-width: 768px) and (max-width:1024px)
+    header
+        .navigation
+            left: 45%
+            gap:0
+    .carousel-txt 
+        p
+            font-size: 35px
+    .carousel-txt
+        position: relative
+

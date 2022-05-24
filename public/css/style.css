@@ -1,4 +1,4 @@
-h2, .accroche {
+h2, .accroche, .menu_link {
   font-family: "Courgette", cursive;
 }
 
@@ -54,8 +54,8 @@ header .navigation .logo {
 }
 
 .carousel-txt {
-  bottom: 7%;
-  left: 50%;
+  bottom: 0%;
+  left: 48.5%;
   transform: translate(-50%, -50%);
 }
 
@@ -84,6 +84,10 @@ header .navigation .logo {
 }
 .menu_page_section .page_box, .book_page_section .page_box, .contact_page_section .page_box {
   border: 1px solid gray;
+}
+
+.menu_page_section:hover .navigation {
+  color: black;
 }
 
 .decoration {
@@ -172,6 +176,21 @@ header .navigation .logo {
 
 .img_ext {
   bottom: 20%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header .navigation {
+    left: 45%;
+    gap: 0;
+  }
+
+  .carousel-txt p {
+    font-size: 35px;
+  }
+
+  .carousel-txt {
+    position: relative;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
