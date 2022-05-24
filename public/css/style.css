@@ -133,7 +133,11 @@ header .navigation .logo {
 
 .menu_link:hover i {
   color: red;
-  borde-right: 2px solid red;
+}
+
+.menu_link:focus {
+  border-right: 2px solid;
+  color: red;
 }
 
 .contact_box {
@@ -143,6 +147,7 @@ header .navigation .logo {
 .locali, .phone, .mail {
   border-bottom: 1px solid #a9aba8;
 }
+
 .insta_img img {
   width: 50px;
 }
@@ -205,6 +210,14 @@ header .navigation .logo {
 
   .img_ext {
     bottom: 43%;
+  }
+
+  .menu_link {
+    border: 0;
+  }
+
+  .under_title_img {
+    width: 200px;
   }
 }
 
