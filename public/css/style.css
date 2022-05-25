@@ -230,6 +230,9 @@ footer {
   header {
     height: 50vh;
   }
+  header .navigation {
+    width: 0;
+  }
   header .burger {
     display: block;
   }
