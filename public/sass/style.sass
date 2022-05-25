@@ -7,8 +7,11 @@ body
     margin: 0
     padding: 0
     box-sizing: border-box
+    font-family: 'Montserrat', sans-serif
 .burger
     display: none
+    z-index: 4
+    width: 100%
 header
     background-image: url('../images/banner1.jpg')
     background-size: cover
@@ -77,8 +80,8 @@ header
 .menu_page_section, .book_page_section,.contact_page_section
     background-image: url('../images/main_bg.jpg')
 
-    .page_box
-        border: 1px solid gray
+.page_box
+    border: 1px solid lightgray
     
 .menu_page_section
     &:hover
@@ -120,7 +123,7 @@ header
     border-bottom: 1px solid lightgray
     border-right: 4px solid white
     border-right: 1px solid lightgray
-     border-bottom: 4px solid white
+
 .menu_link:hover
     i
         color: red
@@ -167,6 +170,7 @@ header
         width: fit-content
 
 .img_ext
+    font-size: 25px
     bottom: 20%
 footer
     z-index: -1
@@ -174,15 +178,19 @@ footer
     header
         .burger
             display: block
-    .main_title
-
+    
     .carousel-txt 
         p
             font-size: 35px
     .carousel-txt
         position: relative
     .img_ext
+        font-size: 15px
         bottom: 32%
+
+    .logo
+        width: 40px
+        transform: scale(1.2)
 @media only screen and (min-width: 320px) and (max-width:767px)
     header
         .burger
@@ -193,15 +201,19 @@ footer
     .book_box
         padding: 0
     .img_ext
-        bottom: 43%
-    .menu_link
-        border: 0
+        font-size: 15px
+        bottom: 32%
+
     .under_title_img
         width: 200px
 
+    .menu_link
+        border-right: 0
+        border-bottom: 4px solid white
+        
     .menu_link:focus
         border-bottom: 4px solid red
-        border-right: 4px solid white
+        border-right: 0
         i
             color: red
             

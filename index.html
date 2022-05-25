@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">  
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="public/css/style.css">
     <title>Taste</title>
 </head>
 <body>
     <header class="position-relative text-white w-100 d-flex flex-column ">
-        <div class="navigation d-none d-lg-flex position-absolute col-9 position-fixed">
+        <div id="navigation" class="navigation d-none d-lg-flex position-absolute col-9 position-fixed">
             <nav class="d-flex align-items-center w-100 justify-content-evenly ">
                 <a href="">home</a>
                 <a href="">about us</a>
@@ -32,17 +32,17 @@
         <!--
             burger responsive
         -->
-        <div class="burger">
+        <div class="burger position-fixed top-0">
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="bg-dark p-4 text-white d-flex flex-column flex-md-row">
-                    <nav class="d-flex flex-column flex-md-row align-items-center w-100 justify-content-evenly gap-lg-3">
+                    <nav class="d-flex  mt-2 mt-md-0  flex-column flex-md-row align-items-center w-100 justify-content-evenly gap-lg-3 gap-4">
                         <a class="text-white" href="">home</a>
                         <a class="text-white" href="">about us</a>
                         <a  class="text-white"href="">menu list</a>
                         <a  class="text-white"href="">team</a>
                     </nav>
-                    <img class="logo m-auto text-center p-4" src="public/images/logo.png"  alt="">
-                    <nav class="d-flex  flex-column flex-md-row align-items-center w-100 justify-content-evenly gap-lg-3">
+                    <img class="logo m-auto text-center p-lg-4" src="public/images/logo.png"  alt="">
+                    <nav class="d-flex  mt-2 mt-md-0 flex-column flex-md-row align-items-center w-100 justify-content-evenly gap-lg-3 gap-4">
                         <a class="text-white" href="">reservation</a>
                         <a  class="text-white"href="">blog</a>
                         <a class="text-white" href="">testimonials</a>
@@ -70,22 +70,31 @@
                 <div class=" main_title flex-column align-items-center">
                   <p class="accroche col-lg-10">Whatever your <span class="text-white text-uppercase">occasion</span>, <span class="text-danger text-uppercase">taste</span>  <span>makes</span>  it one to <span>remember</span> !</p>
                   <div class="main_buttons d-flex gap-2 justify-content-center">
-                    <a class="p-2 bg-white border-0 text-dark" href="">purchase theme</a>
-                    <a class="p-2 bg-danger border-0 text-white" href="">learn more</a>
+                    <a class="p-md-2 text-center  bg-white border-0 text-dark" href="">purchase theme</a>
+                    <a class="p-md-2 text-center bg-danger border-0 text-white" href="">learn more</a>
                   </div>
-  
 
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="">
-                    <p>Whatever your ccasion taste makes it one to remeber !</p>
-                </div>
+                <div class=" main_title flex-column align-items-center">
+                    <p class="accroche col-lg-10">Whatever your <span class="text-white text-uppercase">occasion</span>, <span class="text-danger text-uppercase">taste</span>  <span>makes</span>  it one to <span>remember</span> !</p>
+                    <div class="main_buttons d-flex gap-2 justify-content-center">
+                      <a class="p-md-2 text-center  bg-white border-0 text-dark" href="">purchase theme</a>
+                      <a class="p-md-2 text-center bg-danger border-0 text-white" href="">learn more</a>
+                    </div>
+  
+                  </div>
               </div>
               <div class="carousel-item">
-                <div class="">
-                    <p>Whatever your occasion taste makes it one to remember !</p>
-                </div>
+                <div class=" main_title flex-column align-items-center">
+                    <p class="accroche col-lg-10">Whatever your <span class="text-white text-uppercase">occasion</span>, <span class="text-danger text-uppercase">taste</span>  <span>makes</span>  it one to <span>remember</span> !</p>
+                    <div class="main_buttons d-flex gap-2 justify-content-center">
+                      <a class="p-md-2 text-center  bg-white border-0 text-dark" href="">purchase theme</a>
+                      <a class="p-md-2 text-center bg-danger border-0 text-white" href="">learn more</a>
+                    </div>
+  
+                  </div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -101,24 +110,25 @@
 
     </header>
 
-    <main>
-        <section class="menu_page_section p-md-4">
+    <main >
+        <section id="menu_page_section" class="menu_page_section p-md-4 position-relative" ></section>
+
+            <div id="page_box" class="page_box bg-white container position-relative mb-4 p-md-4" >
            
-            <div class="page_box bg-white container position-relative p-md-3">
                 <img src="public/images/box-bottom-left.png" class="position-absolute bottom-0 start-0  d-none d-md-block" alt="">
                 <img src="public/images/box-bottom_right.png" class="position-absolute bottom-0 end-0  d-none d-md-block" alt="">
                 <img src="public/images/box-left-top.png" class="position-absolute top-0 start-0  d-none d-md-block" alt="">
                 <img src="public/images/box-right-top.png" class="position-absolute top-0 end-0  d-none d-md-block" alt="">
 
-                <div class="story_box">
+                <div class="story_box" >
                     <div class="chefs_title d-flex flex-column align-items-center m-4 ">
                         <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">our</span> story</h2>
                         <img class="under_title_img m-md-auto" src="public/images/decoration_line.png" alt="">
                     </div>
                     <p class="text-secondary col-12 col-lg-6 text-center m-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur fugiat modi eius repellendus voluptatibus reprehenderit dicta quis? Reiciendis amet repellat, consequatur exercitationem minima laborum delectus, natus ipsa iste nostrum ducimus voluptate laudantium aut eos et beatae impedit nobis vel dicta accusantium est in. Enim officia odio fuga natus blanditiis possimus rem modi ab quidem nulla provident veritatis sunt, exercitationem ipsa officiis dolor suscipit quae nisi sapiente voluptates odit non aut. Quasi doloribus enim pariatur minima, quia nostrum sint hic harum iusto sunt dolore tempore soluta impedit </p>
                 </div>
-                <div class="menu_box p-lg-4">
-                    <div class="menu_title d-flex flex-column flex-md-row align-items-center m-4">
+                <div class="menu_box p-lg-4 " >
+                    <div class="menu_title d-flex flex-column align-items-center m-4">
                         <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">our</span> menu list</h2>
                         <img class="under_title_img m-md-auto" src="public/images/decoration_line.png" alt="">
                     </div>
@@ -141,7 +151,7 @@
                                 </a>
                                 <a class="menu_link  list-group-item-action text-center text-capitalize fs-5 d-flex flex-column" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
                                     <h2><i class="menu_icon  fa-solid fa-utensils "></i></h2>
-                                    <p>dinenr</p>
+                                    <p>dinner</p>
                                 </a>
                             </div>
                         </div>
@@ -515,7 +525,7 @@
             </div>
         </section>
         <section class="meet_chefs bg-black d-flex flex-column gap-5">
-            <div class="chefs_title d-flex flex-column align-items-center">
+            <div class="chefs_title d-flex flex-column align-items-center mt-3">
                 <h2 class="text-white text-center text-capitalize"><span class="text-danger text-uppercase">meet</span> our chefs</h2>
                 <img class="under_title_img m-md-auto" src="public/images/decoration_line.png" alt="">
             </div>
@@ -542,7 +552,7 @@
             
         </section>
 
-        <section class="book_page_section p-4">
+        <section class="book_page_section p-md-4">
            
             <div class="page_box bg-white container position-relative p-md-3">
                 <img src="public/images/box-bottom-left-grey.png" class="position-absolute bottom-0 start-0 d-none d-md-block" alt="">
@@ -555,10 +565,10 @@
                         <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">book</span> your table</h2>
                         <img class="under_title_img m-md-auto col-md-12" src="public/images/decoration_line.png" alt="">
                     </div>
-                    <div class="book_box text-white rounded-2 m-auto d-flex flex-column gap-3">
+                    <div class="book_box text-white rounded-2 m-auto d-flex flex-column gap-4 ">
                         <p class="text-center opacity-50">for any question call us at: <span class="fs-5"> +03-77298772</span></p>
-                        <form class="book_form d-flex flex-column flex-lg-row"action="">
-                            <div class="form1 d-flex flex-column m-auto gap-1">
+                        <form class="book_form d-flex flex-column flex-lg-row gap-2 gap-lg-4"action="">
+                            <div class="form1 d-flex flex-column m-auto gap-2">
                                 <input type="text" placeholder="Full name">
                                 <input type="text" placeholder="Phone number">
                                 <input type="text" placeholder="Date">
@@ -572,41 +582,31 @@
                                     <option value="goldfish">Goldfish</option>
                                 </select>
                             </div>
-                            <div class="form2 d-flex flex-column  m-auto gap-1">
+                            <div class="form1 d-flex flex-column m-auto gap-2">
                                 <input type="text" placeholder="Enter id">
-                                <select name="pets" id="pet-select">
-                                    <option value="">No of personne</option>
-                                    <option value="1">1</option>
-                                    <option value="dog">2</option>
-                                    <option value="cat">3</option>
-                                    <option value="hamster">4</option>
-                                    <option value="parrot">5</option>
-                                    <option value="spider">6</option>
-                                    <option value="goldfish">7</option>
-                                </select>
+                                <input type="text" placeholder="No of person">
                                 <input type="text" placeholder="Time">
                                 <select name="pets" id="pet-select">
-                                    <option value="">cuisine</option>
-                                    <option value="1">1</option>
-                                    <option value="dog">2</option>
-                                    <option value="cat">3</option>
-                                    <option value="hamster">4</option>
-                                    <option value="parrot">5</option>
-                                    <option value="spider">6</option>
-                                    <option value="goldfish">7</option>
+                                    <option value="">Cuisine</option>
+                                    <option value="dog">Dog</option>
+                                    <option value="cat">Cat</option>
+                                    <option value="hamster">Hamster</option>
+                                    <option value="parrot">Parrot</option>
+                                    <option value="spider">Spider</option>
+                                    <option value="goldfish">Goldfish</option>
                                 </select>
                             </div>
                             
                         </form>
-                        <a class="text-white bg-danger rounded-5 p-2 m-auto" href=""> book now</a>
+                        <a class="text-white bg-danger rounded-5 p-2 m-auto mb-2" href=""> book now</a>
                     </div>
                 </div>
-                <div class="book_blog">
+                <div class="book_blog d-flex flex-column align-items-center">
                     <div class="chefs_title d-flex flex-column align-items-center m-4">
                         <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">our</span> blog</h2>
                         <img class="under_title_img m-md-auto" src="public/images/decoration_line.png" alt="">
                     </div>
-                    <div class="blog_images d-flex justify-content-evenly m-auto flex-column flex-md-row">
+                    <div class="blog_images d-flex justify-content-evenly align-items-center m-auto flex-column flex-md-row">
                         <div class="card border-0 col-md-5 position-relative">
                             <img src="public/images/blog_img1.jpg" class="card-img-top" alt="...">
                             <div class="col-10 m-auto">
@@ -614,7 +614,7 @@
                                     12 april / 20 Comments / 35 likes
                                 </div>
                                 <div class="card-body">
-                                  <p class="card-text">Some quick example text to build on the card </p>
+                                  <p class="card-text">Some quick example text to build on the card Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </div>
 
@@ -622,28 +622,28 @@
                         <div class="card border-0 col-md-5 position-relative">
                             <img src="public/images/blog_img2.jpg" class="card-img-top" alt="...">
                             <div class="col-10 m-auto">
-                                <div class="img_ext bg-danger text-white p-2 rounded-3  position-absolute">
+                                <div class="img_ext bg-danger text-white p-2 rounded-3  fs-lg-4 position-absolute">
                                     12 april / 20 Comments / 35 likes
                                 </div>
                                 <div class="card-body">
-                                  <p class="card-text">Some quick example text to build on the card </p>
+                                  <p class="card-text">Some quick example text to build on the card Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </div>
 
                         </div>
        
                     </div>
-                   
+                    <a class="p-2 bg-danger text-white rounded-5 text-uppercase" href="">know more</a>
                 </div>
             </div>
         </section>
         <section class="testi_section p-md-4 d-flex align-items-center flex-column">
-            <div class="chefs_title d-flex flex-column align-items-center mb-4">
+            <div class="testi_title d-flex flex-column align-items-center mb-4">
                 <h2 class="text-white text-center text-capitalize"><span class="text-danger text-uppercase">client</span> testimonials</h2>
                 <img class=" under_title_img m-md-auto" src="public/images/decoration_line.png" alt="">
             </div>
             <div class="testi_box d-flex flex-column flex-lg-row gap-3 col-10 justify-content-center">
-                <div class="testi  d-flex flex-column flex-md-row col-12 col-lg-6 gap-3">
+                <div class="testi d-flex flex-column flex-md-row col-12 col-lg-6 gap-3 align-items-center">
                     <img class=" rounded-circle" src="public/images/testimonial1.jpg" alt="">
                     <div class="testi_txt text-white ps-2">
                         <p class="fs-5 m-0">Lorem, ipsum.</p>
@@ -651,7 +651,7 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, perferendis.</p>
                     </div>
                 </div>
-                <div class="testi d-flex flex-column flex-md-row-reverse col-lg-6 gap-3">
+                <div class="testi d-flex flex-column flex-md-row-reverse col-lg-6 gap-3 align-items-center">
                     <img class="rounded-circle border-white border-2 border-s" src="public/images/testimonial1.jpg" alt="">
                     <div class="testi_txt text-white ps-2">
                         <p class="fs-5 m-0">Lorem, ipsum.</p>
@@ -729,7 +729,8 @@
         </div>
 
     </footer>
-    <sript src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"></sript>
+    <script src="public/js/main.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>                                                                                 
