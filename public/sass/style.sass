@@ -1,3 +1,6 @@
+$main_red: #c42d40
+$nav_black: #1d1c1c
+    
 h2, .accroche, .menu_link
     font-family: 'Courgette', cursive
 a
@@ -17,32 +20,39 @@ header
     background-size: cover
     background-repeat: no-repeat
     height: 100vh
+    
     -webkit-box-shadow: inset 2px 14px 2000px 50px rgba(0,0,0,0.22)
     box-shadow: inset 2px 14px 50px 2000px rgba(0,0,0,0.52)
-    .navigation
-        top: 10%
-        left: 50%
-        transform: translate(-50%,-50%)
-        gap:4rem
-        z-index: 3
-        nav
-            border-top: 1px solid white
-            border-bottom: 1px solid white
-            a
-                color: white
-                width: 100%
-                height: 100%
-                text-align: center
-                display: flex
-                flex-direction: column
-                justify-content: center
-                font-weight: bold
-            :hover
-                background-color: red
-      
-        .logo
-            width: 40px
-            transform: scale(1.5)
+
+
+.navigation
+    padding: 1.5rem
+    width: 100%
+    top: 7%
+    left: 50%
+    transform: translate(-50%,-50%)
+    gap:4rem
+    z-index: 3
+    transition: background-color 0.2s ease
+    height: fit-content
+    nav
+        border-top: 1px solid white
+        border-bottom: 1px solid white
+        a
+            color: white
+            width: 100%
+            height: 100%
+            text-align: center
+            display: flex
+            flex-direction: column
+            justify-content: center
+            font-weight: bold
+        :hover
+            background-color: $main_red
+
+    .logo
+        width: 40px
+        transform: scale(1.5)
 
 
 .carousel-item
@@ -50,7 +60,7 @@ header
 
 .carousel-txt
      bottom: 0%
-     left: 48.5%
+     left: 49.5%
      transform: translate(-50%,-50%)
 
 .main_title
@@ -83,10 +93,6 @@ header
 .page_box
     border: 1px solid lightgray
     
-.menu_page_section
-    &:hover
-        .navigation
-            color: black
 .decoration-bottom
     background-image: url('../images/bottom_decoration_img.png')
     height: 10px
@@ -126,11 +132,11 @@ header
 
 .menu_link:hover
     i
-        color: red
+        color: $main_red
 .menu_link:focus
-    border-right: 4px solid red
+    border-right: 4px solid $main_red
     i
-        color: red
+        color: $main_red
         
 
    
@@ -173,7 +179,12 @@ header
     font-size: 25px
     bottom: 20%
 footer
+    background-image: url('../images/footer_background.jpg')
     z-index: -1
+
+.under_footer
+    height: 2.4rem
+    width: 100%
 @media only screen and (min-width: 768px) and (max-width:1023px)
     header
         .burger
@@ -193,11 +204,16 @@ footer
         transform: scale(1.2)
 @media only screen and (min-width: 320px) and (max-width:767px)
     header
+        height: 50vh
+    
         .burger
             display: block
     .carousel-txt 
+        left: 0
+        transform: none
         p
             font-size: 25px
+
     .book_box
         padding: 0
     .img_ext
@@ -212,8 +228,8 @@ footer
         border-bottom: 4px solid white
         
     .menu_link:focus
-        border-bottom: 4px solid red
+        border-bottom: 4px solid $main_red
         border-right: 0
         i
-            color: red
+            color: $main_red
             

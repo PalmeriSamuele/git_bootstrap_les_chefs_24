@@ -13,22 +13,23 @@
     <title>Taste</title>
 </head>
 <body>
+    <div id="navigation" class="navigation d-none d-lg-flex  col-9 position-fixed ">
+        <nav class="d-flex align-items-center w-100 justify-content-evenly ">
+            <a href="">home</a>
+            <a href="">about us</a>
+            <a href="">menu list</a>
+            <a href="">team</a>
+        </nav>
+        <img class="logo" src="public/images/logo.png"  alt="">
+        <nav class="d-flex align-items-center w-100 justify-content-evenly ">
+            <a href="">reservation</a>
+            <a href="">blog</a>
+            <a href="">testimonials</a>
+            <a href="">contact us</a>
+        </nav>
+    </div>
     <header class="position-relative text-white w-100 d-flex flex-column ">
-        <div id="navigation" class="navigation d-none d-lg-flex position-absolute col-9 position-fixed">
-            <nav class="d-flex align-items-center w-100 justify-content-evenly ">
-                <a href="">home</a>
-                <a href="">about us</a>
-                <a href="">menu list</a>
-                <a href="">team</a>
-            </nav>
-            <img class="logo" src="public/images/logo.png"  alt="">
-            <nav class="d-flex align-items-center w-100 justify-content-evenly">
-                <a href="">reservation</a>
-                <a href="">blog</a>
-                <a href="">testimonials</a>
-                <a href="">contact us</a>
-            </nav>
-        </div>
+
         <!--
             burger responsive
         -->
@@ -60,15 +61,15 @@
         </div>
         
         <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="false">
-            <div class="carousel-indicators ">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active  d-none d-md-block" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class=" d-none d-md-block"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class=" d-none d-md-block"></button>
             </div>
             <div class="carousel-txt position-absolute">
               <div class="carousel-item active">
                 <div class=" main_title flex-column align-items-center">
-                  <p class="accroche col-lg-10">Whatever your <span class="text-white text-uppercase">occasion</span>, <span class="text-danger text-uppercase">taste</span>  <span>makes</span>  it one to <span>remember</span> !</p>
+                  <p class="accroche text-center ">Whatever your <span class="text-white text-uppercase">occasion</span>, <span class="text-danger text-uppercase">taste</span>  <span>makes</span>  it one to <span>remember</span> !</p>
                   <div class="main_buttons d-flex gap-2 justify-content-center">
                     <a class="p-md-2 text-center  bg-white border-0 text-dark" href="">purchase theme</a>
                     <a class="p-md-2 text-center bg-danger border-0 text-white" href="">learn more</a>
@@ -78,7 +79,7 @@
               </div>
               <div class="carousel-item">
                 <div class=" main_title flex-column align-items-center">
-                    <p class="accroche col-lg-10">Whatever your <span class="text-white text-uppercase">occasion</span>, <span class="text-danger text-uppercase">taste</span>  <span>makes</span>  it one to <span>remember</span> !</p>
+                    <p class="accroche text-center ">Whatever your <span class="text-white text-uppercase">occasion</span>, <span class="text-danger text-uppercase">taste</span>  <span>makes</span>  it one to <span>remember</span> !</p>
                     <div class="main_buttons d-flex gap-2 justify-content-center">
                       <a class="p-md-2 text-center  bg-white border-0 text-dark" href="">purchase theme</a>
                       <a class="p-md-2 text-center bg-danger border-0 text-white" href="">learn more</a>
@@ -88,7 +89,7 @@
               </div>
               <div class="carousel-item">
                 <div class=" main_title flex-column align-items-center">
-                    <p class="accroche col-lg-10">Whatever your <span class="text-white text-uppercase">occasion</span>, <span class="text-danger text-uppercase">taste</span>  <span>makes</span>  it one to <span>remember</span> !</p>
+                    <p class="accroche text-center">Whatever your <span class="text-white text-uppercase">occasion</span>, <span class="text-danger text-uppercase">taste</span>  <span>makes</span>  it one to <span>remember</span> !</p>
                     <div class="main_buttons d-flex gap-2 justify-content-center">
                       <a class="p-md-2 text-center  bg-white border-0 text-dark" href="">purchase theme</a>
                       <a class="p-md-2 text-center bg-danger border-0 text-white" href="">learn more</a>
@@ -121,14 +122,14 @@
                 <img src="public/images/box-right-top.png" class="position-absolute top-0 end-0  d-none d-md-block" alt="">
 
                 <div class="story_box" >
-                    <div class="chefs_title d-flex flex-column align-items-center m-4 ">
+                    <div class="chefs_title d-flex flex-column align-items-center m-4 mb-5 mt-4">
                         <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">our</span> story</h2>
                         <img class="under_title_img m-md-auto" src="public/images/decoration_line.png" alt="">
                     </div>
                     <p class="text-secondary col-12 col-lg-6 text-center m-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur fugiat modi eius repellendus voluptatibus reprehenderit dicta quis? Reiciendis amet repellat, consequatur exercitationem minima laborum delectus, natus ipsa iste nostrum ducimus voluptate laudantium aut eos et beatae impedit nobis vel dicta accusantium est in. Enim officia odio fuga natus blanditiis possimus rem modi ab quidem nulla provident veritatis sunt, exercitationem ipsa officiis dolor suscipit quae nisi sapiente voluptates odit non aut. Quasi doloribus enim pariatur minima, quia nostrum sint hic harum iusto sunt dolore tempore soluta impedit </p>
                 </div>
                 <div class="menu_box p-lg-4 " >
-                    <div class="menu_title d-flex flex-column align-items-center m-4">
+                    <div class="menu_title d-flex flex-column align-items-center m-4 mb-5 mt-4">
                         <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">our</span> menu list</h2>
                         <img class="under_title_img m-md-auto" src="public/images/decoration_line.png" alt="">
                     </div>
@@ -525,7 +526,7 @@
             </div>
         </section>
         <section class="meet_chefs bg-black d-flex flex-column gap-5">
-            <div class="chefs_title d-flex flex-column align-items-center mt-3">
+            <div class="chefs_title d-flex flex-column align-items-center mb-5 mt-4">
                 <h2 class="text-white text-center text-capitalize"><span class="text-danger text-uppercase">meet</span> our chefs</h2>
                 <img class="under_title_img m-md-auto" src="public/images/decoration_line.png" alt="">
             </div>
@@ -554,16 +555,16 @@
 
         <section class="book_page_section p-md-4">
            
-            <div class="page_box bg-white container position-relative p-md-3">
+            <div id="page_box2" class="page_box bg-white container position-relative p-md-3">
                 <img src="public/images/box-bottom-left-grey.png" class="position-absolute bottom-0 start-0 d-none d-md-block" alt="">
                 <img src="public/images/box-bottom_right-grey.png" class="position-absolute bottom-0 end-0  d-none d-md-block" alt="">
                 <img src="public/images/box-left-top-grey.png" class="position-absolute top-0 start-0  d-none d-md-block" alt="">
                 <img src="public/images/box-right-top-grey.png" class="position-absolute top-0 end-0  d-none d-md-block" alt="">
 
                 <div class="book_table m-2">
-                    <div class="book_title d-flex flex-column align-items-center m-4">
+                    <div class="book_title d-flex flex-column align-items-center m-4 mb-5 mt-4">
                         <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">book</span> your table</h2>
-                        <img class="under_title_img m-md-auto col-md-12" src="public/images/decoration_line.png" alt="">
+                        <img class="under_title_img m-md-auto" src="public/images/decoration_line.png" alt="">
                     </div>
                     <div class="book_box text-white rounded-2 m-auto d-flex flex-column gap-4 ">
                         <p class="text-center opacity-50">for any question call us at: <span class="fs-5"> +03-77298772</span></p>
@@ -602,7 +603,7 @@
                     </div>
                 </div>
                 <div class="book_blog d-flex flex-column align-items-center">
-                    <div class="chefs_title d-flex flex-column align-items-center m-4">
+                    <div class="chefs_title d-flex flex-column align-items-center mb-5 mt-4">
                         <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">our</span> blog</h2>
                         <img class="under_title_img m-md-auto" src="public/images/decoration_line.png" alt="">
                     </div>
@@ -633,16 +634,16 @@
                         </div>
        
                     </div>
-                    <a class="p-2 bg-danger text-white rounded-5 text-uppercase" href="">know more</a>
+                    <a class="p-2 bg-danger text-white rounded-5 text-uppercase mb-3" href="">know more</a>
                 </div>
             </div>
         </section>
         <section class="testi_section p-md-4 d-flex align-items-center flex-column">
-            <div class="testi_title d-flex flex-column align-items-center mb-4">
+            <div class="testi_title d-flex flex-column align-items-center mb-5 mt-4">
                 <h2 class="text-white text-center text-capitalize"><span class="text-danger text-uppercase">client</span> testimonials</h2>
                 <img class=" under_title_img m-md-auto" src="public/images/decoration_line.png" alt="">
             </div>
-            <div class="testi_box d-flex flex-column flex-lg-row gap-3 col-10 justify-content-center">
+            <div class="testi_box d-flex flex-column flex-lg-row gap-3 col-10 justify-content-center  mb-3">
                 <div class="testi d-flex flex-column flex-md-row col-12 col-lg-6 gap-3 align-items-center">
                     <img class=" rounded-circle" src="public/images/testimonial1.jpg" alt="">
                     <div class="testi_txt text-white ps-2">
@@ -664,11 +665,11 @@
 
 
         <section class="contact_page_section p-4">
-            <div class="contact_title d-flex flex-column align-items-center">
+            <div class="contact_title d-flex flex-column align-items-center mb-5 mt-4">
                 <h2 class="text-dark text-center text-capitalize"><span class="text-danger text-uppercase">our</span> contact</h2>
                 <img class="under_title_img m-md-auto" src="public/images/decoration_line.png" alt="">
             </div>
-            <div class=" contact_box bg-danger text-white p-3  rounded-1 m-auto">
+            <div class=" contact_box bg-danger text-white p-3  rounded-1 me-auto ms-auto ">
                 <div class="locali text-center p-2">
                     <h2> <i class="fa-solid fa-location-dot"></i></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, id?</p>
@@ -685,7 +686,7 @@
         </section>
     </main>
 
-    <footer class="d-flex flex-column bg-dark">
+    <footer class="d-flex flex-column ">
         <div class="decoration-top w-100"></div>
         <div class="bg-dar d-flex flex-column justify-content-center flex-md-row gap-3 text-white p-4">
             
@@ -726,6 +727,10 @@
                     <p class="bg-danger rounded-5">design</p>
                 </div>
             </div>
+        </div>
+
+        <div class="bg-danger under_footer">
+
         </div>
 
     </footer>
